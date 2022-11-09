@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<html>
+  
+  <head>
+    <title>Tic Tac Toe Game</title>
+  </head>
+  
+  <body>
+<!--     
+    <audio><source src="https://www.dropbox.com/s/w4t8y43xi5mwku8/wining.mp3?raw=1"></source></audio>
+    <audio><source src="https://www.dropbox.com/s/gfv7klhzco8zez9/tie.mp3?raw=1"></source></audio>
+    <audio><source src="https://www.dropbox.com/s/1927v1q1mv45ny3/field_click.mp3?raw=1"></source></audio> -->
+
+    <!-- <h1>Tic Tac Toe Game</h1> -->
+    <div class = "well">
+      <div class = "turn-info"></div>
+      <button id = "reset" class="btn fifth"> ♻</button>
+      <section class="message"><p></p></section>
+      
+      <section class="choose">
+      
+      <div class="choose-game">
+        <p> <span class="tac">T</span><span class="toe">i</span><span class="tac">c</span> <br><span class="toe">T</span><span class="tac">a</span><span class="toe">c</span><br> <span class="toe"> <span class="tac">T</span>o<span class="tac">e</span></span></p> 
+        <button class="choose-1 btn fifth">Single Player</button> <br>
+        <button class="choose-2 btn single">Multiplayer</button>
+      </div>
+        
+      <div class="players-names">
+        <p>Enter players names</p> 
+        <input type="text" id="player1name"   size="20" maxlength="10" placeholder = "Type Player 1 name" class="" val = "Player 1">
+        <input type="text" id="player2name" size="20" maxlength="10"placeholder = "Type Player 2 name"class="" val = "Player 2">
+        <button class="start-game btn fifth">Start Game</button>
+      </div>
+        
+      <div class="choose-level">
+        <p>Choose game Difficulty:</p> 
+        <div class="btn-group">
+          <div class="radio">
+            <label><input type="radio" name="optionsRadios" id="easy" value="easy">Easy</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optionsRadios" id="hard" value="hard">Hard</label>
+          </div>
+       </div>
+        <button class="start-games btn fifth">Start Game</button>
+     </div>
+        
+     <div class="choose-sign">
+       <p></p>
+        <button class="choose-x">❌</button>
+        <button class="choose-o">⭕</button>
+        </div>
+      </section><!--end of choose-->
+      
+      <section class="fields">  
+        <table id="table">
+          <tr>
+            <td id="1a" value = "1a" class="box ">1a</td>
+            <td id="2a" value = "2a" class="box ">2a</td>
+            <td id="3a" value = "3a" class="box ">3a</td>
+          </tr>
+
+           <tr>
+            <td id="1b" value = "1b" class="box">1b</td>
+            <td id="2b" value = "2b" class="box">2b</td>
+            <td id="3b" value = "3b" class="box">3b</td>
+          </tr>
+
+           <tr>
+            <td id="1c" value = "1c" class="box">1c</td>
+            <td id="2c" value = "2c" class="box">2c</td>
+            <td id="3c" value = "3c" class="box">3c</td>
+          </tr>
+        </table>
+      </section><!--end of fields-->
+      
+      <section class="scores">
+        <p>0 : 0</p>
+        <div class="players-score">
+          <span class = "player1-score">
+            
+          </span> <br>
+          <span class = "player2-score"></span>            
+          </div>
+      </section>
+      
+    </div><!--end of well-->
+   
+ 
+  </body>
+
+  <script>
+
+    // const td = document.querySelectorAll('td');
+    // console.log(td);
+  </script>
+  
+<script src="script.js"></script>
+</html>
+</html>
+
+
+
+<!-- .style.display = "none";#333333 -->
