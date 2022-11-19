@@ -45,9 +45,9 @@
         <p>Choose game Difficulty:</p> 
         <div class="btn-group">
           <div class="radio">
-            <label><input type="radio" name="optionsRadios" id="easy" value="easy">Easy</label>
+            <label><input type="radio" name="optionsRadios" id="easy"  value="easy">Easy</label>
           </div>
-          <div class="radio">
+          <div class="radio hard">
             <label><input type="radio" name="optionsRadios" id="hard" value="hard">Hard</label>
           </div>
        </div>
@@ -69,7 +69,7 @@
             <td id="3a" value = "3a" class="box ">3a</td>
           </tr>
 
-           <tr>
+           <tr >
             <td id="1b" value = "1b" class="box">1b</td>
             <td id="2b" value = "2b" class="box">2b</td>
             <td id="3b" value = "3b" class="box">3b</td>
@@ -103,6 +103,45 @@
     // const td = document.querySelectorAll('td');
     // console.log(td);
   </script>
+
+  <script>
+
+const btn = document.querySelector('.radio'); 
+const hard = document.querySelector('.hard')       
+
+   
+        btn.addEventListener("click", function onClick(event) {
+          const color = btn.style.color;
+          if( color === 'white'){
+            btn.style.color = 'purple'
+            hard.style.color = 'white'
+
+
+          }else{
+            btn.style.color = 'white'
+
+          }
+        });
+
+       
+    
+ 
+
+        hard.addEventListener("click", function onClick(event) {
+          const color = hard.style.color;
+          if( color === 'white'){
+            hard.style.color = 'purple'
+            btn.style.color = 'white'
+
+
+          }else{
+            hard.style.color = 'white'
+
+          }
+        });
+  </script>
+
+
   
 <script src="script.js"></script>
 </html>

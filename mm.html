@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <button id="btn" style="background-color: salmon">Button</button>
+
+    <script src="index.js"></script>
+
+    <script>
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+  const backgroundColor = btn.style.backgroundColor;
+
+  if (backgroundColor === 'salmon') {
+    btn.style.backgroundColor = 'green';
+
+    // 👇️ optionally change text color
+    // btn.style.color = 'white';
+  } else {
+    btn.style.backgroundColor = 'salmon';
+
+    // 👇️ optionally change text color
+    // btn.style.color = 'blue';
+  }
+});
+
+    </script>
+  </body>
+</html>

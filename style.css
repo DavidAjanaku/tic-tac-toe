@@ -84,18 +84,27 @@ button:hover {
 
 }
 
-.choose-level .radio:active{
-  color: purple;
+.choose-level .radio{
+  color: white;
 }
 
+.choose-level .hard{
+  color: white;
+}
+
+td {
+  border-bottom: 5px solid #5F9EA0;
+}
 
 
 .choose-level .disabled {
   color: #999999;
 }
 .choose-level input[type=radio] {
-  margin: 11px -20px 0;
+  margin: 11px -50px 0 ;
   opacity: 0;
+  transform: scale(6.5);
+    margin-bottom: 50px;
 }
 .choose-level label {
   font-size: 0.8em;
@@ -263,6 +272,7 @@ tr:not(:last-child) {
   font-family: cursive;
   font-size: 1.2rem;
 }
+
 
 .fifth {
 
